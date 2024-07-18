@@ -136,3 +136,100 @@ function showUserRole(role: boolean | string ){
 
 console.log(showUserRole(false));
 console.log(showUserRole("Admin"));
+
+// 12 - TYPE ALIAS
+
+type ID = string | number
+
+function showId(id: ID){
+    console.log(`O ID é: ${id}`)
+}
+
+showId("200");
+showId(1);
+showId(123);
+
+// 13 - INTERFACE
+interface Point {
+    x: number
+    y: number
+    z: number
+}
+function showCoords(obj: Point){
+    console.log(`X: ${obj.x} Y: ${obj.y} Z: ${obj.z}`)
+}
+
+const coordObj:Point = {
+    x: 10,
+    y: 15,
+    z: 20,
+}
+
+showCoords(coordObj)
+
+// 14 - DIFERENCIA ENTRE TYPE ALIAS E INTERFACE
+
+interface Person{
+    name: string
+}
+
+interface Person{
+    age: number
+}
+
+const somePerson: Person = {name: "Matheus", age: 20}
+
+type personType = {
+    name: string
+}
+
+//type personType = {
+//  age: number
+//} Não é possivel fazer modificações na estrutura com type
+
+
+// 15 - LITERAL TYPES
+
+let test: "testando"
+
+test = "testando"
+
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center"){
+    console.log(`A direção é: ${direction} `)
+}
+
+showDirection("left")
+
+//showDirection("top")  MOSTRA APENAS OS VALORES TIPADOS 
+
+// 16 - NON-NULL ASSERTION OPERATOR
+
+const p = document.getElementById("some-p")
+
+console.log(p!.innerText)
+
+
+// 17 - BIGINT
+
+
+let n: bigint
+
+//n = 1 
+
+n = 1000n
+
+console.log(n)
+
+console.log(typeof n)
+
+console.log(n + 100n)
+
+// 18 - SYMBOL
+
+let symbolA:symbol = Symbol("a")
+let symbolB = Symbol("a")
+
+console.log(symbolA == symbolB)
+console.log(symbolA === symbolB)
