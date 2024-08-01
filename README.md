@@ -32,3 +32,11 @@ Aprofundaremos o conceito de narrowing em TypeScript, que permite refinar automa
 
 Nesta seção, focaremos na tipagem de funções em TypeScript, incluindo parâmetros, tipos de retorno, funções genéricas e o uso de tipos de função avançados.
 
+### Seção 6 - Tipos de Objetos
+
+Nesta seção, exploraremos como definir e usar tipos de objetos no TypeScript. Tipos de objetos são fundamentais para descrever a estrutura de dados complexos e garantir que o código esteja manipulando dados de forma consistente e segura.
+
+### Seção 6 - Tipos de Objetos
+
+Nesta seção, vamos explorar como criar tipos personalizados em TypeScript. A criação de tipos ajuda a garantir a segurança e a clareza no seu código, além de facilitar a reutilização e a manutenção.
+
