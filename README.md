@@ -36,7 +36,7 @@ Nesta seção, focaremos na tipagem de funções em TypeScript, incluindo parâm
 
 Nesta seção, exploraremos como definir e usar tipos de objetos no TypeScript. Tipos de objetos são fundamentais para descrever a estrutura de dados complexos e garantir que o código esteja manipulando dados de forma consistente e segura.
 
-### Seção 6 - Tipos de Objetos
+### Seção 7 - Criação de Tipos
 
 Nesta seção, vamos explorar como criar tipos personalizados em TypeScript. A criação de tipos ajuda a garantir a segurança e a clareza no seu código, além de facilitar a reutilização e a manutenção.
 
