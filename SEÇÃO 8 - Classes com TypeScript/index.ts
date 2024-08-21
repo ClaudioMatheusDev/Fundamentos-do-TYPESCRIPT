@@ -227,3 +227,46 @@ class Nova extends Base{
 const myObject = new Nova();
 
 myObject.somMethod();
+
+// 11 - PUBLIC
+
+class c {
+	x = 10;
+}
+
+class D extends C{
+	
+}
+
+const cInstance = new C();
+
+console.log(cInstace.x);
+
+const cInstance = new D();
+
+console.log(dInstace.x);
+
+// 12 - PROTECTED
+class E {
+ protected  x = 10
+
+protected protectedMethod(){
+	console.log("Este método é protegido");
+}	
+}
+
+class F extends E {
+	showX(){
+	 console.log("X: " + this.x)
+	}
+
+	showProtectedMethod(){
+		this.protectedMethodo();
+	}
+}
+
+const fInstance = new F();
+
+fInstance.showX();
+
+fInstance.protectedMethod();
