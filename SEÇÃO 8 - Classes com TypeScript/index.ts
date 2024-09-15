@@ -270,3 +270,42 @@ const fInstance = new F();
 fInstance.showX();
 
 fInstance.protectedMethod();
+
+// 13 - PRIVATE
+
+class PrivateClass {
+	private name = "Private";	
+
+	ShowName(){
+		return this.name;
+	}
+
+	private privateMethod(){
+		console.log("Método privado");
+	}
+
+	showPrivateMethod(){
+		this.privateMethod(); // Corrigido para chamar o método
+	}
+}
+
+const pObj = new PrivateClass();
+
+console.log(pObj.ShowName());
+
+// console.log(pObj.privateMethod()); // Isso causará erro porque privateMethod é privado
+
+pObj.showPrivateMethod(); 
+
+// 14 - STATIC MEMBERS
+class StaticMembers{
+	static prop = "Test static"; // Tornar a propriedade estática
+
+	static staticMethod(){
+		console.log("Este é um método estático");
+	}
+}
+
+console.log(StaticMembers.prop); // Acessando a propriedade estática corretamente
+
+StaticMembers.staticMethod(); // Chamando o método estático corretamente
